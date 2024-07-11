@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collections",
+  "info": {
+    "singularName": "collection",
+    "pluralName": "collections",
+    "displayName": "Collection"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::item.item",
+      "inversedBy": "collections"
+    }
+  }
+}

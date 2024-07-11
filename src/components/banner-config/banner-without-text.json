@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_banner_config_banner_without_texts",
+  "info": {
+    "displayName": "banner_without_text"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

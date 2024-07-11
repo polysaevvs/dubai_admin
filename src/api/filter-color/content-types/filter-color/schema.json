@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "filter_colors",
+  "info": {
+    "singularName": "filter-color",
+    "pluralName": "filter-colors",
+    "displayName": "Filter_colors"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "colors": {
+      "displayName": "color",
+      "type": "component",
+      "repeatable": true,
+      "component": "color.color"
+    }
+  }
+}

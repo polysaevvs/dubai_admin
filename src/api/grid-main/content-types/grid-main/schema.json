@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "grid_mains",
+  "info": {
+    "singularName": "grid-main",
+    "pluralName": "grid-mains",
+    "displayName": "Grid_main",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image_1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-config.brand-banner",
+      "required": true
+    },
+    "image_2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-config.brand-banner",
+      "required": true
+    },
+    "image_3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-config.brand-banner",
+      "required": true
+    },
+    "image_4": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-config.brand-banner",
+      "required": true
+    },
+    "image_5": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-config.brand-banner",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "banner_mains",
+  "info": {
+    "singularName": "banner-main",
+    "pluralName": "banner-mains",
+    "displayName": "Banner_main",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "small_banner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner-config.banner-without-text",
+      "required": true
+    }
+  }
+}

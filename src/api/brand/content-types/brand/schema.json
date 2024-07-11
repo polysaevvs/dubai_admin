@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands",
+  "info": {
+    "singularName": "brand",
+    "pluralName": "brands",
+    "displayName": "Brand",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "color": {
+      "type": "string",
+      "regex": "#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?",
+      "required": true
+    },
+    "description_long": {
+      "type": "text",
+      "required": true
+    },
+    "description_short": {
+      "type": "text",
+      "required": true
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item",
+      "mappedBy": "brand"
+    },
+    "banner": {
+      "displayName": "BrandBanner",
+      "type": "component",
+      "repeatable": true,
+      "component": "banner-config.brand-banner"
+    },
+    "item_example": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "brands"
+    },
+    "manual": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "videos",
+        "audios",
+        "images"
+      ]
+    },
+    "coming_soon": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "coming_soon_images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "text_color_black": {
+      "type": "boolean",
+      "default": false
+    },
+    "banner_page_image": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "grid_categories",
+  "info": {
+    "singularName": "grid-category",
+    "pluralName": "grid-categories",
+    "displayName": "Grid_category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image_1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-config.brand-banner",
+      "required": true
+    },
+    "image_2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-config.brand-banner",
+      "required": true
+    },
+    "image_3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-config.brand-banner",
+      "required": true
+    },
+    "image_4": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-config.brand-banner",
+      "required": true
+    }
+  }
+}

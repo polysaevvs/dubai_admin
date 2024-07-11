@@ -1,0 +1,5 @@
+/**
+ * regiter service
+ */
+
+export default () => ({});

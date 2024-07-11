@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "category_satatic_imgs",
+  "info": {
+    "singularName": "category-satatic-img",
+    "pluralName": "category-satatic-imgs",
+    "displayName": "Category_static_img",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "New": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "Sale": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    }
+  }
+}

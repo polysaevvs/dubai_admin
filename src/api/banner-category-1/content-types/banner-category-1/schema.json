@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "banner_category_1s",
+  "info": {
+    "singularName": "banner-category-1",
+    "pluralName": "banner-category-1s",
+    "displayName": "Banner_category_1"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banners": {
+      "displayName": "banners",
+      "type": "component",
+      "repeatable": true,
+      "component": "banner-config.banners"
+    }
+  }
+}

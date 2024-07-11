@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_banner_config_banners",
+  "info": {
+    "displayName": "banners",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

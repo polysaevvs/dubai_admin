@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_banner_config_brand_banners",
+  "info": {
+    "displayName": "BrandBanner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

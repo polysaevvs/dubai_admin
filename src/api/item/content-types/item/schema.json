@@ -1,0 +1,128 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "Items",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "vendor_sku": {
+      "type": "string"
+    },
+    "upc_code": {
+      "type": "string"
+    },
+    "hs_code": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "items"
+    },
+    "features": {
+      "type": "text"
+    },
+    "search_term": {
+      "type": "text"
+    },
+    "characterisctics_b2c": {
+      "type": "component",
+      "repeatable": true,
+      "component": "characterisctics.characterisctics"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "items"
+    },
+    "price_b2c": {
+      "type": "decimal",
+      "required": true
+    },
+    "price_b2b": {
+      "type": "decimal",
+      "required": true
+    },
+    "price_discount": {
+      "type": "decimal"
+    },
+    "characterisctics_b2b": {
+      "type": "component",
+      "repeatable": true,
+      "component": "characterisctics.characterisctics"
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Unisex",
+        "Girl",
+        "Boy",
+        "Women"
+      ],
+      "required": true
+    },
+    "age_group": {
+      "type": "enumeration",
+      "enum": [
+        "Baby_0-2",
+        "Toddler_2-4",
+        "Adventurers_5-7",
+        "Pioneers_8+",
+        "All_Ages"
+      ],
+      "required": true
+    },
+    "New": {
+      "type": "boolean",
+      "default": false
+    },
+    "main_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "size": {
+      "type": "string",
+      "required": false
+    },
+    "collections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::collection.collection",
+      "mappedBy": "items"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "our_partners",
+  "info": {
+    "singularName": "our-partner",
+    "pluralName": "our-partners",
+    "displayName": "Our_partners",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "partners": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    }
+  }
+}

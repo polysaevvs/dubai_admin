@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_color_colors",
+  "info": {
+    "displayName": "color",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "string",
+      "regex": "#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?",
+      "required": true
+    },
+    "border": {
+      "type": "string",
+      "regex": "#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
