@@ -25,7 +25,7 @@ export default {
         from: 'contacts@toyboutique.ae',
         // from: 'contact@mosinfobez.com',
         subject: 'Toy boutiq registration',
-        text: 'Thnk you for registration on our site. We will contact you in a few working days. Thanks for your interest.',
+        text: 'Thank you for registration on our site. We will contact you in a few working days. Thanks for your interest.',
         // html: 'Hello world!',
       });
 
